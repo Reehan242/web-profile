@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+      }
+      .social-media a {
+        font-size: 1.5em;
+        color: #333;
+        text-decoration: none;
+      }
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .btn {
+        transition: 0.4s;
+      }
+      .btn-custom-violet {
+        background-color: violet;
+        border-color: violet;
+      }
+      .btn-custom-itchio {
+        background-color: darkgoldenrod;
+        border-color: darkgoldenrod;
+      }
+
+      .btn:hover {
+        background-color: green;
+      }
+
+      .bg-light {
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#social-media">Social Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <header class="text-center mt-5">
+      <h1>Raihan Hammam Sukma</h1>
+      <h7 class="mt-3">Programmer</h7>
+    </header>
+    <!-- Header End -->
+
+    <!-- Content Start -->
+    <div class="container" data-bs-spy="scroll" >
+      <!-- About Start -->
+      <h2 id="about" class=" mt-3 mb-3 text-center">About Me</h2>
+      <div class="mt-4 mb-5 bg-light">
+        <section>
+          <div class="row text-justify">
+            <div class="col-lg-10">
+              <p class="ms-5 mt-5">
+                Hi, I'm Raihan Hammam Sukma, Bachelor of Informatics with a
+                strong foundation in backend development and programming. Able
+                to create and optimize web applications using Laravel and MySQL,
+                and develop games with Unity, Godot, and Game Maker Studio.
+                Skilled in problem solving, critical thinking, and collaborating
+                in a team environment. Passionate about continuing to learn and
+                improve skills to provide high-quality contributions to
+                innovative projects.
+              </p>
+            </div>
+            <div class="col-lg-2 ms-auto mt-2">
+              <img
+                src="image/foto nonformal2_Blurred.png"
+                alt=""
+                class="rounded-circle img-thumbnail text-align-center mb-2"
+                width="180"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- About End -->
+
+      <!-- Projects Start -->
+      <h2 id="projects" class="text-center mt-3 mb-3">Projects</h2>
+      <div class="mt-4 mb-5 bg-light">
+        <section class="mb-5">
+          <div class="row">
+            <div class="col-md-4 ms-2 mt-3 mb-3 me-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Blog Post Web</h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Website, Laravel 8, MySQL, Bootstrap 5, Prototype</h6>
+                  <a href="#collapse-1" data-bs-toggle="collapse" class="btn btn-primary btn-sm" >Key Features</a>
+                  <a href="https://github.com/Reehan242/laravel-blog-post" class="btn btn-primary btn-sm">See Project</a>
+                  <p class="collapse" id="collapse-1">
+                    User Authentication, Post Management, User Dashboard, Admin Authorization, Post Categories</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 ms-2 mt-3 mb-3 me-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Guild Rush</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Game, Unity, C#, Team Project</h6>
+                    <a href="#collapse-2" data-bs-toggle="collapse" class="btn btn-primary btn-sm" >Key Features</a>
+                    <a href="https://osifunny.itch.io/guild-rush" class="btn btn-primary btn-sm">See Project</a>
+                    <p class="collapse" id="collapse-2">
+                      Character Gacha, Character Equipment Management, Equipment Shop and Upgrade System, Character Auto Battle, Player Rank affect Gacha Tier, Party Character Selection, Quest Selection</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+      </div>
+      <!-- Projects End -->
+
+      <!-- Social Media Start -->
+      <h2 id="social-media" class="text-center mb-3 mt-3">Social Media</h2>
+      <div class="mt-4 mb-5">
+        <section class="mb-5 bg-light">
+          <div class="row text-center">
+            <div class="col-lg-12 mb-3 mt-3 mx-auto">
+              <a
+                href="https://instagram.com/rhammams"
+                target="_blank"
+                class="mb-2 btn btn-primary btn-custom-violet"
+                ><i class="bi bi-instagram"></i> Instagram
+              </a>
+              <a
+                href="https://www.linkedin.com/in/raihan-hammam-sukma"
+                target="_blank"
+                class="mb-2 btn btn-primary"
+                ><i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/Reehan242"
+                target="_blank"
+                class="mb-2 btn btn-secondary"
+                ><i class="bi bi-github"></i> GitHub</a
+              >
+
+              <a
+                href="https://www.youtube.com/@rhammams9583"
+                target="_blank"
+                class="mb-2 btn btn-danger"
+                ><i class="bi bi-youtube"></i> Youtube</a
+              >
+
+              <a
+                href="https://reehan.itch.io/"
+                target="_blank"
+                class="mb-2 btn btn-primary btn-custom-itchio"
+                ><i class="bi bi-controller"></i> Itch.io</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Social Media End -->
+
+      <!-- Contact Me Start -->
+      <h2 id="contact" class="text-center mt-3 mb-3">Contact</h2>
+      <div class="mt-4 mb-5 bg-light">
+        <section class="mb-5">
+          <div class="row text-center">
+            <div class="col-lg-4 ms-auto mt-3">
+              <p class="text-center">
+                <i class="bi bi-envelope-at-fill"></i> Email:
+                hammamraihan31@gmail.com
+              </p>
+              <div class="text-center">
+                <a
+                  href="mailto:hammamraihan31@gmail.com?subject=Halo%20Saya%20Tertarik&body=Halo,%20saya%20ingin%20membicarakan%20sesuatu%20dengan%20Anda."
+                  class="btn btn-primary"
+                >
+                  <i class="bi bi-envelope"></i> Contact via Email
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 me-auto mt-3">
+              <p class="text-center">
+                <i class="bi bi-whatsapp"></i> Phone: +62 822 4533 2661
+              </p>
+              <div class="text-center">
+                <a
+                  href="https://wa.me/6282245332661?text=Halo,%20saya%20tertarik%20untuk%20berbicara%20lebih%20lanjut."
+                  target="_blank"
+                  class="btn btn-success"
+                >
+                  <i class="bi bi-whatsapp"></i> Contact via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Contact Me End -->
+    </div>
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+    <footer class="py-3">
+      <p>&copy; 2024 Raihan Hammam Sukma. All rights reserved.</p>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End Script Bootstrap -->
+  </body>
+</html>
