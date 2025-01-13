@@ -82,48 +82,7 @@
         z-index: 1050;
       }
 
-      @keyframes fadeIn-right {
-        from {
-          opacity: 0;
-          transform: translateX(100px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes fadeIn-left {
-        from {
-          opacity: 0;
-          transform: translateX(-100px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      .animate-text,
-      .animate-image,
-      .animate-card {
-        opacity: 0; 
-      }
-
-      .animate-text.visible {
-        animation: fadeIn-right 0.5s ease-out;
-        opacity: 1; 
-      }
-
-      .animate-image.visible {
-        animation: fadeIn-left 1.0s ease-out;
-        opacity: 1;
-      }
-      .animate-card.visible {
-        animation: fadeIn-left 0.75s ease-out;
-        opacity: 1;
-      }
+      
     </style>
   </head>
   <body>
@@ -173,12 +132,12 @@
       <!-- Content Start -->
       <div class="container" data-bs-spy="scroll">
         <!-- About Start -->
-        <h2 id="about" class="mt-3 mb-3 text-center animate-text">About Me</h2>
+        <h2 id="about" class="mt-3 mb-3 text-center ">About Me</h2>
         <div class="mt-4 mb-5 bg-light mx-4">
           <section>
             <div class="row text-center mx-2">
               <div class="col-lg-10">
-                <p class="ms-auto mt-5 animate-text">
+                <p class="ms-auto mt-5 ">
                   Hi, I'm Raihan Hammam Sukma, Bachelor of Informatics with a
                   strong foundation in backend development and programming. Able
                   to create and optimize web applications using Laravel and
@@ -193,7 +152,7 @@
                 <img
                   src="image/foto nonformal2_Blurred.png"
                   alt=""
-                  class="rounded-circle img-thumbnail text-align-center mb-2 animate-image"
+                  class="rounded-circle img-thumbnail text-align-center mb-2"
                   width="180"
                 />
               </div>
@@ -203,11 +162,11 @@
         <!-- About End -->
 
         <!-- Projects Start -->
-        <h2 id="projects" class="text-center mt-3 mb-3 animate-text">Projects</h2>
+        <h2 id="projects" class="text-center mt-3 mb-3 ">Projects</h2>
         <div class="mt-4 mb-5 bg-light mx-4">
           <section class="mb-5">
             <div
-              class="row mx-2 overflow-y-scroll d-flex animate-card"
+              class="row mx-2 overflow-y-scroll d-flex "
               style="height: 600px"
             >
               <!-- Project 8 -->
@@ -234,6 +193,11 @@
                       href="https://github.com/Reehan242/Kanvas-Kata"
                       class="btn btn-primary btn-sm btn-project"
                       >Project Code</a
+                    >
+                    <a
+                      href="https://youtu.be/-kyxVwCR6FA"
+                      class="btn btn-primary btn-sm btn-project"
+                      >Project Demo</a
                     >
                     <p class="collapse" id="collapse-8">
                       User Authentication, Post Management, Post Likes, Post
@@ -495,10 +459,10 @@
         <!-- Projects End -->
 
         <!-- Social Media Start -->
-        <h2 id="social-media" class="text-center mb-3 mt-3 animate-text">Social Media</h2>
+        <h2 id="social-media" class="text-center mb-3 mt-3 ">Social Media</h2>
         <div class="mt-4 mb-5">
           <section class="mb-5 bg-light mx-4">
-            <div class="row text-center animate-card">
+            <div class="row text-center ">
               <div class="col-lg-12 mb-2 mt-3 mx-auto">
                 <a
                   href="https://instagram.com/rhammams"
@@ -540,10 +504,10 @@
         <!-- Social Media End -->
 
         <!-- Contact Me Start -->
-        <h2 id="contact" class="text-center mt-3 mb-3 animate-text">Contact</h2>
+        <h2 id="contact" class="text-center mt-3 mb-3 ">Contact</h2>
         <div class="mt-4 mb-5 bg-light mx-4">
           <section class="mb-5">
-            <div class="row text-center animate-card p-2">
+            <div class="row text-center  p-2">
               <div class="col-lg-4 ms-auto mt-3">
                 <p class="text-center">
                   <i class="bi bi-envelope-at-fill"></i> Email:
@@ -601,32 +565,6 @@
       ></script>
       <!-- End Script Bootstrap -->
 
-      <!-- Script Animasi Start -->
-      <script>
-        // Pilih semua elemen yang memiliki class animasi
-        const animatableElements = document.querySelectorAll(
-          ".animate-text, .animate-image, .animate-card"
-        );
-
-        // Buat Intersection Observer
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible"); // Tambahkan class 'visible'
-                observer.unobserve(entry.target); // Hentikan observasi setelah animasi dijalankan
-              }
-            });
-          },
-          {
-            threshold: 0.1,
-          }
-        ); // Elemen dianggap terlihat saat 10% area-nya masuk viewport
-
-        // Observe setiap elemen yang dapat dianimasikan
-        animatableElements.forEach((element) => observer.observe(element));
-      </script>
-      <!-- Script Animasi End -->
     </div>
   </body>
 </html>
