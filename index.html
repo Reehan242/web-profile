@@ -1,570 +1,824 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Profile Website</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/img/apple-touch-icon.ico" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
     />
     <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-    <link rel="icon" type="image/x-icon" href="image/Favicon.ico">
-    
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #333;
-      }
-      header {
-        background: #333;
-        color: #fff;
-        padding: 20px 0;
-      }
-      .social-media a {
-        font-size: 1.5em;
-        color: #333;
-        text-decoration: none;
-      }
-      footer {
-        background: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px;
-      }
-
-      .btn {
-        transition: 0.4s;
-      }
-      .btn-custom-violet {
-        background-color: violet;
-        border-color: violet;
-      }
-      .btn-custom-itchio {
-        background-color: darkgoldenrod;
-        border-color: darkgoldenrod;
-      }
-
-      .btn:hover {
-        background-color: green;
-      }
-
-      .bg-light {
-        border-radius: 25px;
-      }
-
-      .btn-project {
-        margin-top: 2px;
-        margin-bottom: 2px;
-      }
-
-      .div-body {
-        background-color: #fff;
-      }
-
-      .transparent-navbar {
-        background-color: rgba(0, 0, 0, 0.6);
-        /* Semi-transparent black */
-        backdrop-filter: blur(4px);
-        /* Adds subtle blur effect */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        /* Thin border for separation */
-        position: sticky;
-        top: 0;
-        z-index: 1050;
-      }
-
-      
-    </style>
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
   </head>
-  <body>
-    <div class="div-body">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg navbar-dark transparent-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="#">Home</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#social-media">Social Media</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+
+  <body class="index-page">
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <div class="profile-img">
+        <img
+          src="assets/img/my-profile-img.jpg"
+          alt=""
+          class="img-fluid rounded-circle"
+        />
+      </div>
+
+      <a
+        href="index.html"
+        class="logo d-flex align-items-center justify-content-center"
+      >
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Raihan Hammam Sukma</h1>
+      </a>
+
+      <div class="social-links text-center">
+        <a href="https://www.linkedin.com/in/raihan-hammam-sukma"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a href="https://instagram.com/rhammams"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://github.com/Reehan242"><i class="bi bi-github"></i></a>
+        <a href="https://www.youtube.com/@rhammams9583"
+          ><i class="bi bi-youtube"></i
+        ></a>
+        <a href="https://reehan.itch.io/"><i class="bi bi-controller"></i></a>
+      </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li>
+            <a href="#hero" class="active"
+              ><i class="bi bi-house navicon"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-person navicon"></i> About</a>
+          </li>
+          <li>
+            <a href="#skills"><i class="bi bi-hammer navicon"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#portfolio"
+              ><i class="bi bi-images navicon"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact"
+              ><i class="bi bi-envelope navicon"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="" />
+
+        <div
+          class="container"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          style="backdrop-filter: blur(4px)"
+        >
+          <h2>Raihan Hammam Sukma</h2>
+          <p>
+            I'm
+            <span
+              class="typed fw-bold"
+              data-typed-items="Web Developer, Game Programmer"
+              >Web Developer</span
+            ><span
+              class="typed-cursor typed-cursor--blink"
+              aria-hidden="true"
+            ></span
+            ><span
+              class="typed-cursor typed-cursor--blink"
+              aria-hidden="true"
+            ></span>
+          </p>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>
+            Hi, I'm Raihan Hammam Sukma, Bachelor of Informatics with a strong
+            foundation in backend development and game programming. Able to
+            create and optimize web applications using Laravel and MySQL, and
+            develop games with Unity, Godot, and Game Maker Studio. Skilled in
+            problem solving, critical thinking, and collaborating in a team
+            environment. Passionate about continuing to learn and improve skills
+            to provide high-quality contributions to innovative projects.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img
+                src="assets/img/my-profile-img.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-8 content">
+              <h2>Web Developer &amp; Game Programmer.</h2>
+              <p class="py-3">
+                With a deep interest in technology, I specialize in creating
+                scalable web applications and immersive game experiences. My
+                passion for programming drives me to consistently learn and
+                apply innovative solutions to real-world challenges. I aim to
+                deliver high-quality results that exceed client expectations.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Birthday:</strong> <span>1 April 2002</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Languages:</strong>
+                      <span>Indonesian, English</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>+62 822 4533 2661</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong> <span>Depok, Indonesia</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                      <span>22</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Degree:</strong>
+                      <span>Bachelor of Informatics</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>hammamraihan31@gmail.com</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Freelance:</strong> <span>Available</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="py-3">
+                I am committed to advancing my expertise and contributing to
+                projects that combine creativity and technical excellence. My
+                ultimate goal is to develop products that not only solve
+                problems but also bring value and inspiration to users
+                worldwide.
+              </p>
+            </div>
           </div>
         </div>
-      </nav>
-      <!-- Navbar End -->
+      </section>
+      <!-- /About Section -->
 
-      <!-- Header Start -->
-      <header class="text-center">
-        <h1>Raihan Hammam Sukma</h1>
-        <h7 class="mt-3">Programmer</h7>
-      </header>
-      <!-- Header End -->
+      <!-- Skills Section -->
+      <section id="skills" class="skills section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <p>
+            Below are the various my technical and non-technical skills. The
+            <strong>Tech Stack</strong> category covers the technologies and
+            programming tools that I use, while
+            <strong>Soft Skills</strong>
+            reflects my ability to communicate, collaborate, and solve problems.
+          </p>
+        </div>
+        <!-- End Section Title -->
 
-      <!-- Content Start -->
-      <div class="container" data-bs-spy="scroll">
-        <!-- About Start -->
-        <h2 id="about" class="mt-3 mb-3 text-center ">About Me</h2>
-        <div class="mt-4 mb-5 bg-light mx-4">
-          <section>
-            <div class="row text-center mx-2">
-              <div class="col-lg-10">
-                <p class="ms-auto mt-5 ">
-                  Hi, I'm Raihan Hammam Sukma, Bachelor of Informatics with a
-                  strong foundation in backend development and programming. Able
-                  to create and optimize web applications using Laravel and
-                  MySQL, and develop games with Unity, Godot, and Game Maker
-                  Studio. Skilled in problem solving, critical thinking, and
-                  collaborating in a team environment. Passionate about
-                  continuing to learn and improve skills to provide high-quality
-                  contributions to innovative projects.
-                </p>
+        <!-- Tech Stack -->
+        <div class="container">
+          <h3
+            class="subtitle"
+            data-bs-toggle="collapse"
+            data-bs-target="#techStack"
+            aria-expanded="false"
+            aria-controls="techStack"
+          >
+            Tech Stack
+          </h3>
+          <div id="techStack" class="collapse show">
+            <div class="row skills-content">
+              <div class="col-lg-3">
+                <div class="progress"><span class="skill">HTML</span></div>
+                <div class="progress"><span class="skill">CSS</span></div>
+                <div class="progress"><span class="skill">PHP</span></div>
+                <div class="progress">
+                  <span class="skill">JavaScript</span>
+                </div>
+                <div class="progress"><span class="skill">Python</span></div>
               </div>
-              <div class="col-lg-2 ms-auto mt-2">
-                <img
-                  src="image/foto nonformal2_Blurred.png"
-                  alt=""
-                  class="rounded-circle img-thumbnail text-align-center mb-2"
-                  width="180"
-                />
+              <div class="col-lg-3">
+                <div class="progress"><span class="skill">C#</span></div>
+                <div class="progress"><span class="skill">Java</span></div>
+                <div class="progress"><span class="skill">VB</span></div>
+                <div class="progress"><span class="skill">MySQL</span></div>
+                <div class="progress"><span class="skill">REST API</span></div>
+              </div>
+              <div class="col-lg-3">
+                <div class="progress">
+                  <span class="skill">CodeIgniter</span>
+                </div>
+                <div class="progress"><span class="skill">Laravel</span></div>
+                <div class="progress"><span class="skill">Bootstrap</span></div>
+                <div class="progress"><span class="skill">AJAX</span></div>
+                <div class="progress"><span class="skill">Unity</span></div>
+              </div>
+              <div class="col-lg-3">
+                <div class="progress"><span class="skill">Godot</span></div>
+                <div class="progress">
+                  <span class="skill">Game Maker Studio</span>
+                </div>
+                <div class="progress"><span class="skill">Git</span></div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
-        <!-- About End -->
 
-        <!-- Projects Start -->
-        <h2 id="projects" class="text-center mt-3 mb-3 ">Projects</h2>
-        <div class="mt-4 mb-5 bg-light mx-4">
-          <section class="mb-5">
-            <div
-              class="row mx-2 overflow-y-scroll d-flex "
-              style="height: 600px"
-            >
-              <!-- Project 8 -->
-              <div class="col-lg-4 mt-3 mb-3">
-                <div class="card">
+        <!-- Soft Skills -->
+        <div class="container">
+          <h3
+            class="subtitle"
+            data-bs-toggle="collapse"
+            data-bs-target="#softSkills"
+            aria-expanded="false"
+            aria-controls="softSkills"
+          >
+            Soft Skills
+          </h3>
+          <div id="softSkills" class="collapse">
+            <div class="row skills-content">
+              <div class="col-lg-3">
+                <div class="progress">
+                  <span class="skill">Communication</span>
+                </div>
+                <div class="progress">
+                  <span class="skill">Analytical Skills</span>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="progress">
+                  <span class="skill">Problem Solving</span>
+                </div>
+                <div class="progress">
+                  <span class="skill">Attention to detail</span>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="progress">
+                  <span class="skill">Time Management</span>
+                </div>
+                <div class="progress">
+                  <span class="skill">Adaptability</span>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="progress">
+                  <span class="skill">Teamwork</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Skills Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>Here are some of the projects I have worked on.</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+            <!-- Project 8 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <a
+                  href="assets/img/portfolio/kanvas-kata_thumbnail.png"
+                  title="Kanvas Kata"
+                  data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"
+                >
                   <img
-                    src="image/kanvas-kata_thumbnail.png"
-                    class="card-img-top"
+                    src="assets/img/portfolio/kanvas-kata_thumbnail.png"
+                    class="card-img-top img-fluid"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">Kanvas Kata Web</h5>
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Kanvas Kata Web</h5>
+                  <div class="card-subtitle-container mb-3">
                     <h6 class="card-subtitle mb-2 text-body-secondary">
                       Website, Laravel, MySQL, Bootstrap 5, AJAX, Google Chart,
                       Personal Project,
                     </h6>
+                  </div>
+                  <div class="mt-1">
                     <a
                       href="#collapse-8"
                       data-bs-toggle="collapse"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Key Features</a
                     >
                     <a
                       href="https://github.com/Reehan242/Kanvas-Kata"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Project Code</a
                     >
                     <a
                       href="https://youtu.be/-kyxVwCR6FA"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Project Demo</a
                     >
-                    <p class="collapse" id="collapse-8">
-                      User Authentication, Post Management, Post Likes, Post
-                      Comments and Reply, User Dashboard with statistic, Admin
-                      Authorization, Post Categories
-                    </p>
                   </div>
+                  <p class="collapse mt-2" id="collapse-8">
+                    User Authentication, Post Management, Post Likes, Post
+                    Comments and Reply, User Dashboard with statistic, Admin
+                    Authorization, Post Categories
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Project 7 -->
-              <div class="col-lg-4 mt-3 mb-3">
-                <div class="card">
+            <!-- Project 7 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <a
+                  href="assets/img/portfolio/crud-rest-server.png"
+                  title="Posts Rest Server"
+                  data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"
+                >
                   <img
-                    src="image/crud-rest-server.png"
-                    class="card-img-top"
+                    src="assets/img/portfolio/crud-rest-server.png"
+                    class="card-img-top img-fluid"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">Posts Rest Server</h5>
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Posts Rest Server</h5>
+                  <div class="card-subtitle-container mb-3">
                     <h6 class="card-subtitle mb-2 text-body-secondary">
                       Website, Laravel 11, MySQL, Bootstrap 5, Personal Project
                     </h6>
+                  </div>
+                  <div class="mt-1">
                     <a
                       href="#collapse-7"
                       data-bs-toggle="collapse"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Key Features</a
                     >
                     <a
                       href="https://github.com/Reehan242/laravel-crud-rest-server"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Project Code</a
                     >
                     <a
                       href="https://youtu.be/Ao_-21tNKRY"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Project Demo</a
                     >
-                    <p class="collapse" id="collapse-7">
-                      API Endpoint for creating / retrieving / updating /
-                      deleting post, API usage documentation page, Post Display
-                      page
-                    </p>
                   </div>
+                  <p class="collapse mt-2" id="collapse-7">
+                    API Endpoint for creating / retrieving / updating / deleting
+                    post, API usage documentation page, Post Display page
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Project 6 -->
-              <div class="col-lg-4 mt-3 mb-3">
-                <div class="card">
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <a
+                  href="assets/img/portfolio/task-it_landing.png"
+                  title="Task It Web"
+                  data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"
+                >
                   <img
-                    src="image/task-it_landing.png"
-                    class="card-img-top"
+                    src="assets/img/portfolio/task-it_landing.png"
+                    class="card-img-top img-fluid"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">Task It Web</h5>
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Task It Web</h5>
+                  <div class="card-subtitle-container mb-3">
                     <h6 class="card-subtitle mb-2 text-body-secondary">
                       Website, Laravel 11, MySQL, Bootstrap 5, Laravel Breeze, ,
                       Personal Project
                     </h6>
+                  </div>
+                  <div class="mt-1">
                     <a
                       href="#collapse-6"
                       data-bs-toggle="collapse"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Key Features</a
                     >
                     <a
                       href="https://github.com/Reehan242/Task-It"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Project Code</a
                     >
                     <a
                       href="https://youtu.be/XqdOb5ocNZg"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Project Demo</a
                     >
-                    <p class="collapse" id="collapse-6">
-                      User Authentication, Task Management, Task Sorting, Task
-                      Filtering
-                    </p>
                   </div>
+                  <p class="collapse mt-2" id="collapse-6">
+                    User Authentication, Task Management, Task Sorting, Task
+                    Filtering
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Project 5 -->
-              <div class="col-lg-4 mt-3 mb-3">
-                <div class="card">
+            <!-- Project 5 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <a
+                  href="assets/img/portfolio/han-blog_thumbnail.png"
+                  title="Blog Post Web"
+                  data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"
+                >
                   <img
-                    src="image/han-blog_thumbnail.png"
-                    class="card-img-top"
+                    src="assets/img/portfolio/han-blog_thumbnail.png"
+                    class="card-img-top img-fluid"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">Blog Post Web</h5>
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Blog Post Web</h5>
+                  <div class="card-subtitle-container mb-3">
                     <h6 class="card-subtitle mb-2 text-body-secondary">
                       Website, Laravel 8, MySQL, Bootstrap 5, Personal Project
                     </h6>
+                  </div>
+                  <div class="mt-1">
                     <a
                       href="#collapse-1"
                       data-bs-toggle="collapse"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Key Features</a
                     >
                     <a
                       href="https://github.com/Reehan242/laravel-blog-post"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Project Code</a
                     >
-                    <p class="collapse" id="collapse-1">
+                    <p class="collapse mt-2" id="collapse-1">
                       User Authentication, Post Management, User Dashboard,
                       Admin Authorization, Post Categories
                     </p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Project 4 -->
-              <div class="col-lg-4 mt-3 mb-3">
-                <div class="card">
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <a
+                  href="assets/img/portfolio/guild-rush-thumbnail.png"
+                  title="Guild Rush"
+                  data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"
+                >
                   <img
-                    src="image\guild-rush-thumbnail.png"
-                    class="card-img-top"
+                    src="assets/img/portfolio/guild-rush-thumbnail.png"
+                    class="card-img-top img-fluid"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">Guild Rush</h5>
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Guild Rush</h5>
+                  <div class="card-subtitle-container mb-3">
                     <h6 class="card-subtitle mb-2 text-body-secondary">
                       Game, Unity, C#, Team Project
                     </h6>
+                  </div>
+                  <div class="mt-1">
                     <a
                       href="#collapse-2"
                       data-bs-toggle="collapse"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Key Features</a
                     >
                     <a
                       href="https://osifunny.itch.io/guild-rush"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >View Project</a
                     >
-                    <p class="collapse" id="collapse-2">
-                      Character Gacha, Character Equipment Management, Equipment
-                      Shop and Upgrade System, Character Auto Battle, Player
-                      Rank affect Gacha Tier, Party Character Selection, Quest
-                      Selection
-                    </p>
                   </div>
+                  <p class="collapse mt-2" id="collapse-2">
+                    Character Gacha, Character Equipment Management, Equipment
+                    Shop and Upgrade System, Character Auto Battle, Player Rank
+                    affect Gacha Tier, Party Character Selection, Quest
+                    Selection
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Project 3 -->
-              <div class="col-lg-4 mt-3 mb-3">
-                <div class="card">
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <a
+                  href="assets/img/portfolio/kisah-monster_thumbnail.png"
+                  title="Kisah Monster"
+                  data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"
+                >
                   <img
-                    src="image\kisah-monster_thumbnail.png"
-                    class="card-img-top"
+                    src="assets/img/portfolio/kisah-monster_thumbnail.png"
+                    class="card-img-top img-fluid"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">Kisah Monster</h5>
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Kisah Monster</h5>
+                  <div class="card-subtitle-container mb-3">
                     <h6 class="card-subtitle mb-2 text-body-secondary">
                       Game, Unity, C#, Personal Project
                     </h6>
+                  </div>
+                  <div class="mt-1">
                     <a
                       href="#collapse-3"
                       data-bs-toggle="collapse"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Key Features</a
                     >
                     <a
                       href="https://reehan.itch.io/kisah-monster"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >View Project</a
                     >
-                    <p class="collapse" id="collapse-3">
-                      2.5D Environment, Character Movement, Object Interaction,
-                      Mini Puzzle, Quiz Based Battle, Mini Book System, Story
-                      Writing, Area Selection
-                    </p>
                   </div>
+                  <p class="collapse mt-2" id="collapse-3">
+                    2.5D Environment, Character Movement, Object Interaction,
+                    Mini Puzzle, Quiz Based Battle, Mini Book System, Story
+                    Writing, Area Selection
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Project 2 -->
-              <div class="col-lg-4 mt-3 mb-3">
-                <div class="card">
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <a
+                  href="assets/img/portfolio/the-only-hero_thumbnail.png"
+                  title="The Only Hero!"
+                  data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"
+                >
                   <img
-                    src="image\the-only-hero_thumbnail.png"
-                    class="card-img-top"
+                    src="assets/img/portfolio/the-only-hero_thumbnail.png"
+                    class="card-img-top img-fluid"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">The Only Hero!</h5>
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">The Only Hero!</h5>
+                  <div class="card-subtitle-container mb-3">
                     <h6 class="card-subtitle mb-2 text-body-secondary">
                       Game, Godot 3.5, Personal Project
                     </h6>
+                  </div>
+                  <div class="mt-1">
                     <a
                       href="#collapse-4"
                       data-bs-toggle="collapse"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Key Features</a
                     >
                     <a
                       href="https://reehan.itch.io/the-only-hero"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >View Project</a
                     >
                     <a
                       href="https://youtu.be/iZk1kRnqzWE"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Project Demo</a
                     >
-                    <p class="collapse" id="collapse-4">
-                      2D Environment, Character Movement, Character Combat,
-                      Character Stats and Leveling , Enemy Chasing, Boss Battle,
-                      Scoring System
-                    </p>
                   </div>
+                  <p class="collapse mt-2" id="collapse-4">
+                    2D Environment, Character Movement, Character Combat,
+                    Character Stats and Leveling , Enemy Chasing, Boss Battle,
+                    Scoring System
+                  </p>
                 </div>
               </div>
+            </div>
 
-              <!-- Project 1 -->
-              <div class="col-lg-4 mt-3 mb-3">
-                <div class="card">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100">
+                <a
+                  href="assets/img/portfolio/brick-crusher_thumbnail.png"
+                  title="Brick Crusher"
+                  data-gallery="portfolio-gallery"
+                  class="glightbox preview-link"
+                >
                   <img
-                    src="image\brick-crusher_thumbnail.png"
-                    class="card-img-top"
+                    src="assets/img/portfolio/brick-crusher_thumbnail.png"
+                    class="card-img-top img-fluid"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <h5 class="card-title">Brick Crusher</h5>
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Brick Crusher</h5>
+                  <div class="card-subtitle-container mb-3">
                     <h6 class="card-subtitle mb-2 text-body-secondary">
                       Game, Game Maker Studio 2, Personal Project, Prototype
                     </h6>
+                  </div>
+                  <div class="mt-1">
                     <a
                       href="#collapse-5"
                       data-bs-toggle="collapse"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >Key Features</a
                     >
                     <a
                       href="https://gx.games/games/zmp8w1/brick-crusher/tracks/eb5f71d4-e853-464c-a770-c0bc298edef0/"
-                      class="btn btn-primary btn-sm btn-project"
+                      class="btn btn-outline-primary btn-sm btn-project"
                       >View Project</a
                     >
-                    <p class="collapse" id="collapse-5">
-                      2D Environment, Brick Breaker Like, Brick Stat and Upgrade
-                      System, Level Selection and Progression, Stage Reward
-                      System
-                    </p>
                   </div>
+                  <p class="collapse mt-2" id="collapse-5">
+                    2D Environment, Brick Breaker Like, Brick Stat and Upgrade
+                    System, Level Selection and Progression, Stage Reward System
+                  </p>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+          <!-- End Portfolio Container -->
         </div>
-        <!-- Projects End -->
+      </section>
+      <!-- /Portfolio Section -->
 
-        <!-- Social Media Start -->
-        <h2 id="social-media" class="text-center mb-3 mt-3 ">Social Media</h2>
-        <div class="mt-4 mb-5">
-          <section class="mb-5 bg-light mx-4">
-            <div class="row text-center ">
-              <div class="col-lg-12 mb-2 mt-3 mx-auto">
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>
+            Feel free to reach out to me for collaborations, inquiries, or just
+            to connect. I'm always open to new opportunities and discussions.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <!-- Email Section -->
+            <div
+              class="col-lg-5 d-flex flex-column align-items-center text-center"
+            >
+              <div class="icon-box bg-light p-4 rounded">
+                <i
+                  class="bi bi-envelope-at-fill display-6 text-primary mb-3"
+                ></i>
+                <h4>Email</h4>
+                <p class="mb-2">hammamraihan31@gmail.com</p>
                 <a
-                  href="https://instagram.com/rhammams"
-                  target="_blank"
-                  class="mb-2 btn btn-primary btn-custom-violet"
-                  ><i class="bi bi-instagram"></i> Instagram
+                  href="mailto:hammamraihan31@gmail.com?subject=Hello%20Raihan&body=I%20am%20interested%20in%20discussing%20an%20opportunity%20with%20you."
+                  class="btn btn-outline-primary"
+                >
+                  Contact via Email
                 </a>
+              </div>
+            </div>
+
+            <!-- Phone Section -->
+            <div
+              class="col-lg-5 d-flex flex-column align-items-center text-center"
+            >
+              <div class="icon-box bg-light p-4 rounded">
+                <i class="bi bi-whatsapp display-6 text-success mb-3"></i>
+                <h4>Phone</h4>
+                <p class="mb-2">+62 822 4533 2661</p>
                 <a
-                  href="https://www.linkedin.com/in/raihan-hammam-sukma"
+                  href="https://wa.me/6282245332661?text=Hello,%20I%20am%20interested%20in%20discussing%20an%20opportunity%20with%20you."
                   target="_blank"
-                  class="mb-2 btn btn-primary"
-                  ><i class="bi bi-linkedin"></i> LinkedIn
+                  class="btn btn-outline-success"
+                >
+                  Contact via WhatsApp
                 </a>
-
-                <a
-                  href="https://github.com/Reehan242"
-                  target="_blank"
-                  class="mb-2 btn btn-secondary"
-                  ><i class="bi bi-github"></i> GitHub</a
-                >
-
-                <a
-                  href="https://www.youtube.com/@rhammams9583"
-                  target="_blank"
-                  class="mb-2 btn btn-danger"
-                  ><i class="bi bi-youtube"></i> Youtube</a
-                >
-
-                <a
-                  href="https://reehan.itch.io/"
-                  target="_blank"
-                  class="mb-2 btn btn-primary btn-custom-itchio"
-                  ><i class="bi bi-controller"></i> Itch.io</a
-                >
               </div>
             </div>
-          </section>
+          </div>
         </div>
-        <!-- Social Media End -->
+      </section>
+      <!-- /Contact Section -->
+    </main>
 
-        <!-- Contact Me Start -->
-        <h2 id="contact" class="text-center mt-3 mb-3 ">Contact</h2>
-        <div class="mt-4 mb-5 bg-light mx-4">
-          <section class="mb-5">
-            <div class="row text-center  p-2">
-              <div class="col-lg-4 ms-auto mt-3">
-                <p class="text-center">
-                  <i class="bi bi-envelope-at-fill"></i> Email:
-                  hammamraihan31@gmail.com
-                </p>
-                <div class="text-center">
-                  <a
-                    href="mailto:hammamraihan31@gmail.com?subject=Halo%20Saya%20Tertarik&body=Halo,%20saya%20ingin%20membicarakan%20sesuatu%20dengan%20Anda."
-                    class="btn btn-primary"
-                  >
-                    <i class="bi bi-envelope"></i> Contact via Email
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 me-auto mt-3 mb-2">
-                <p class="text-center">
-                  <i class="bi bi-whatsapp"></i> Phone: +62 822 4533 2661
-                </p>
-                <div class="text-center">
-                  <a
-                    href="https://wa.me/6282245332661?text=Halo,%20saya%20tertarik%20untuk%20berbicara%20lebih%20lanjut."
-                    target="_blank"
-                    class="btn btn-success"
-                  >
-                    <i class="bi bi-whatsapp"></i> Contact via WhatsApp
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>&copy; 2024-<span id="currentYear"></span> Raihan Hammam Sukma</p>
+          <script>
+            document.getElementById("currentYear").textContent =
+              new Date().getFullYear();
+          </script>
         </div>
-        <!-- Contact Me End -->
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
       </div>
-      <!-- Content End -->
+    </footer>
 
-      <!-- Footer Start -->
-      <footer class="py-3">
-        <p>
-          &copy; 2024-<span id="currentYear"></span> Raihan Hammam Sukma. All
-          rights reserved.
-        </p>
-        <script>
-          document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
-        </script>
-      </footer>
-      <!-- Footer End -->
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-      <!-- Script Bootstrap -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-      <!-- End Script Bootstrap -->
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-    </div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
